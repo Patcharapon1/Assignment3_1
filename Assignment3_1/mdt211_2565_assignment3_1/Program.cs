@@ -1,4 +1,8 @@
-﻿class Program
+﻿// ขึ้นต้นได้เฉพาะ J กับ O ใช้ R กับ G ขึ้นต้นไม่ได้
+// ขึ้นต้นได้เฉพาะ J กับ O ใช้ R กับ G ขึ้นต้นไม่ได้
+// ขึ้นต้นได้เฉพาะ J กับ O ใช้ R กับ G ขึ้นต้นไม่ได้
+
+class Program
 {
     static char CheckChar(char inputFlower)
     {
@@ -68,6 +72,22 @@
             else if(inputFlower == 'G')
             {
                 MalaiList.Add(inputFlower);
+                int a = MalaiList.GetLength();
+                if(MalaiList.Get(-3) == 'G'&& MalaiList.Get(-2)=='R')
+                {
+                    MalaiList.Remove(a-1);
+                    while(inputFlower == 'G')
+                    {
+                        Console.WriteLine("invaid pattern");
+                        inputFlower = char.Parse(Console.ReadLine());
+                        if(CheckChar(inputFlower)=='N')
+                        {
+                            break;
+                        }
+                    }
+                    MalaiList.Add(inputFlower);
+
+                }
                 inputFlower = char.Parse(Console.ReadLine());
                 if(CheckChar(inputFlower)=='N')
                 {
@@ -86,9 +106,9 @@
                             break;
                         }
                     }
+                    MalaiList.Add(inputFlower);
 
                 }
-                MalaiList.Add(inputFlower);
                 if(MalaiList.Get(-1)==MalaiList.Get(-2))
                 {
                     inputFlower = char.Parse(Console.ReadLine());
@@ -137,7 +157,7 @@
 
         for(int i=0; i<MalaiList.GetLength(); i++)
         {
-            Console.WriteLine(MalaiList.Get(i));
+            Console.Write(MalaiList.Get(i));
         }
     }
 }
