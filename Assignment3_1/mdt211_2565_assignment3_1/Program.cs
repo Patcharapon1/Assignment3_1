@@ -34,7 +34,7 @@
                 if(MalaiList.Get(-1)==MalaiList.Get(-3))
                 {
                     MalaiList.Remove(a-1);
-                    Console.WriteLine("error");
+                    Console.WriteLine("invaid pattern");
                 }
                 inputFlower = char.Parse(Console.ReadLine());
                 if(CheckChar(inputFlower)=='N')
@@ -45,7 +45,7 @@
                 while(MalaiList.Get(-1)==MalaiList.Get(-3))
                 {
                     MalaiList.Remove(-1);
-                    Console.WriteLine("error");
+                    Console.WriteLine("invaid pattern");
                     inputFlower = char.Parse(Console.ReadLine());
                     if(CheckChar(inputFlower)=='N')
                     {
@@ -69,6 +69,25 @@
             {
                 MalaiList.Add(inputFlower);
                 inputFlower = char.Parse(Console.ReadLine());
+                if(CheckChar(inputFlower)=='N')
+                {
+                    break;
+                }
+                MalaiList.Add(inputFlower);
+                if(inputFlower == 'R')
+                {
+                    inputFlower = char.Parse(Console.ReadLine());
+                    while(inputFlower == 'G')
+                    {
+                        Console.WriteLine("invaid pattern");
+                        inputFlower = char.Parse(Console.ReadLine());
+                        if(CheckChar(inputFlower)=='N')
+                        {
+                            break;
+                        }
+                    }
+
+                }
                 MalaiList.Add(inputFlower);
                 if(MalaiList.Get(-1)==MalaiList.Get(-2))
                 {
@@ -87,7 +106,7 @@
                         }
                         while(inputFlower == 'G')
                         {
-                            Console.WriteLine("error");
+                            Console.WriteLine("invaid pattern");
                             inputFlower = char.Parse(Console.ReadLine());
                         }
                         if(CheckChar(inputFlower)=='N')

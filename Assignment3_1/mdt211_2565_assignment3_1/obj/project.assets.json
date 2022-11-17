@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\Desktop\\Assign3\\mdt211_2565_assignment3\\mdt211_2565_assignment3.csproj",
+      "projectUniqueName": "C:\\Users\\User\\Desktop\\New\\Assignment3_1\\assignment3_1\\mdt211_2565_assignment3_1\\mdt211_2565_assignment3.csproj",
       "projectName": "mdt211_2565_assignment3",
-      "projectPath": "C:\\Users\\User\\Desktop\\Assign3\\mdt211_2565_assignment3\\mdt211_2565_assignment3.csproj",
+      "projectPath": "C:\\Users\\User\\Desktop\\New\\Assignment3_1\\assignment3_1\\mdt211_2565_assignment3_1\\mdt211_2565_assignment3.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\Desktop\\Assign3\\mdt211_2565_assignment3\\obj\\",
+      "outputPath": "C:\\Users\\User\\Desktop\\New\\Assignment3_1\\assignment3_1\\mdt211_2565_assignment3_1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config"
